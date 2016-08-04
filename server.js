@@ -16,7 +16,7 @@ var middlewear = {
 app.use(middlewear.logger);
 
 app.get('/about', middlewear.requireAuthentication, function (req, res) {
-    res.send('About us');
+    res.send('About us!');
 });
 
 app.use(express.static(__dirname + '/public'));
